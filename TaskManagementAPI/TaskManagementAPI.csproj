@@ -10,4 +10,14 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.8" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="TaskManagement.API\DTOs\" />
+    <Folder Include="TaskManagement.Core\Entities\" />
+    <Folder Include="TaskManagement.Core\Interfaces\" />
+    <Folder Include="TaskManagement.Core\Services\" />
+    <Folder Include="TaskManagement.Infrastructure\Data\" />
+    <Folder Include="TaskManagement.Infrastructure\Migrations\" />
+    <Folder Include="TaskManagement.Infrastructure\Repositories\" />
+  </ItemGroup>
+
 </Project>
