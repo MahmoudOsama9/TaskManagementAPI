@@ -8,6 +8,9 @@ namespace TaskManagementAPI.TaskManagement.Core.Configurations
     {
         public void Configure(EntityTypeBuilder<Comment> builder)
         {
+
+            builder.ToTable("Comments");
+
             builder.HasKey(x => x.Id);
 
             builder.Property(c => c.Content)
