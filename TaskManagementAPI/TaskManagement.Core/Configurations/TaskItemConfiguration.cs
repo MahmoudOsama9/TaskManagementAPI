@@ -8,7 +8,7 @@ namespace TaskManagementAPI.TaskManagement.Core.Configurations
     {
         public void Configure(EntityTypeBuilder<TaskItem> builder)
         {
-
+            builder.ToTable("Tasks");
         }
 
     }
