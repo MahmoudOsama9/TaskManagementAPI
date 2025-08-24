@@ -23,8 +23,8 @@ namespace TaskManagementAPI.TaskManagement.Core.Configurations
                 .HasDefaultValueSql("GETDATE()");
 
             builder.HasOne(p => p.Owner)
-                .WithMany(u => u.OwendProjects)
-                .HasForeignKey(p => p.Owner)
+                .WithMany(u => u.OwnedProjects)
+                .HasForeignKey(p => p.OwnerId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasMany(p => p.Tasks)

@@ -9,7 +9,7 @@
         public string Role { get; set; } = "User";
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-        public ICollection<Project> OwendProjects { get; set; } = new List<Project>();
+        public ICollection<Project> OwnedProjects { get; set; } = new List<Project>();
         public ICollection<TaskItem> AssignedTasks { get; set; } = new List<TaskItem>();
         public ICollection<Comment> Comments { get; set; } = new List<Comment>();
     }

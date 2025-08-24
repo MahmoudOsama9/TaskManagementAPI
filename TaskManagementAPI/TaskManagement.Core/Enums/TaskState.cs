@@ -1,6 +1,6 @@
 ﻿namespace TaskManagementAPI.TaskManagement.Core.Enums
 {
-    public enum TaskStatus
+    public enum TaskState
     {
         Todo,
         Inprogress,

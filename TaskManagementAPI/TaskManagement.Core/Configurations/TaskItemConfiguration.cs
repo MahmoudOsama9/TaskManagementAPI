@@ -27,7 +27,7 @@ namespace TaskManagementAPI.TaskManagement.Core.Configurations
 
             builder.HasOne(t => t.Project)
                 .WithMany(t => t.Tasks)
-                .HasForeignKey(t => t.Project.Id)
+                .HasForeignKey(t => t.ProjectId)
                 .OnDelete(DeleteBehavior.Cascade);
 
             builder.HasOne(t => t.AssignedUser)
